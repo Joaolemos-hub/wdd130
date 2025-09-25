@@ -13,33 +13,39 @@
     box-sizing: border-box;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
-    background-color: var(--accent1-color);
-    padding: 10px 16px;
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
 }
 
-header  nav ul {
-    display: flex;
-    gap: 24px;
-    justify-content: flex-end;    
-    list-style: none;
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    background-color: var(--accent1-color);
+    padding: 10px 40px;
 }
 
 header img {
-    height: 80px; 
+    height: 120px; 
     justify-self: start;
+    padding: 0.75rem;
 }
 
 header nav {
     margin-left: 250px;
 }
 
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+header  nav ul {
+    display: flex;
+    gap: 20px;    
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
 }
 
 header, main, footer {
@@ -58,107 +64,117 @@ nav, p, section, article {
     padding: 8px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .hero {
-    position: relative;
+  position: relative;
+  margin-top: 20px;
 }
 
 .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+  width: 100%;
+  display: block;
 }
 
 .hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    background-color: var(--primary-color); 
-    color: #ddd;
-    font-size: 2rem;
-    font-family: var(--heading-font);
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-}
-
-.socialmedia a {
-    text-decoration: none;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: #ddd;
+  font-size: 2rem;
+  font-family: var(--heading-font);
 }
 
 .hero-text {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    position: relative;
-    gap: 16px;
-    background-color: var(--accent2-color); 
-    color: white;
-    padding: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 96%;
+  background-color: var(--accent2-color);
+  color: white;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 16px;
 }
 
 .hero-text p {
-    width: 100%;
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 .hero-text img {
-    width: 100px;
-    height: auto;
-    margin-left: 16px;
+  width: 100px;
+  height: auto;
+  margin-left: 16px;
 }
 
 .history {
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    gap: 20px;
-    align-items: center;
-    margin-top: 32px;
+  margin-top: 40px;
 }
+
 .history h2 {
-    grid-column: 1 / -1; 
-    background-color: var(--primary-color);
-    color: white;
-    padding: 12px;
-    text-align: center; 
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px;
+  text-align: center;
+  margin-bottom: 20px;
 }
-.history img {
-    width: 100%;
-    height: auto;
-    display: block;
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.history-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.history-content p {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .adventure {
-    margin-top: 32px;
+  margin-top: 40px;
 }
+
 .adventure h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 12px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px;
+  text-align: center;
+  margin-bottom: 20px;
 }
+
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  text-align: center;
+  width: 100%;
 }
-.gallery figure {
-    text-align: center;
-}
+
 .gallery img {
-    width: 100%;
-    max-width: 150px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 120px;
+  margin: 0 auto;
+}
+
+.gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery figcaption {
+    margin-top: 6px;
+    font-size: 0.9rem;
 }
 
 footer {
@@ -179,14 +195,14 @@ footer div {
     margin: 0 auto;
 }
 
-footer .socialmedia {
-    display: flex;
-    gap: 16px;
-}
-
 footer p {
     margin: 0;
     font-size: 16px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 16px;
 }
 
 footer nav a img { 
