@@ -241,6 +241,7 @@ footer nav a img {
     width: 350px;
     height: 350px;
     border-radius: 8px;
+    border: 0;
 }
 
 .contact-form {
